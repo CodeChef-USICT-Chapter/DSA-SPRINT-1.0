@@ -55,7 +55,7 @@ int main()
     cout << endl;
     cout << ans;
 
-    //now it has becme prefix array
+    //now it has become prefix array
 
     return 0;
 }
