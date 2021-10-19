@@ -1,0 +1,8 @@
+Given a string str. The task is to find the length of the string.
+
+Examples:
+Input: str = "Codechef"
+Output: Length of Str is : 8
+
+Input: str = "Ilovecoding"
+Output: Length of Str is : 11
