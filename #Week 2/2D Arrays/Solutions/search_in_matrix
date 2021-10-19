@@ -1,0 +1,38 @@
+#include <iostream>
+
+using namespace std;
+
+void search(int matrix[][100], int rows, int columns, int value) {
+    for(int i = 0 ; i < rows ; i++) {
+        for(int j = 0 ; j < columns ; j++) {
+            if(matrix[i][j] == value) {
+                cout<<"Yes"<<endl;
+                return;
+            }
+        }
+    }
+    cout<<"False"<<endl;
+    return;
+}
+
+int main() {
+    int matrix[100][100];
+    int rows;
+    int columns;
+    int value;
+    cin>>rows;
+    cin>>columns;
+    cin>>value;
+    for(int i = 0 ; i < rows ; i++) {
+        for(int j = 0 ; j < columns ; j++) {
+            cin>>matrix[i][j];
+        }
+    }
+    search(matrix, rows, columns, value);
+    for(int i = 0 ; i < rows ; i++) {
+        for(int j = 0 ; j < columns ; j++) {
+            cout<<matrix[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+}
